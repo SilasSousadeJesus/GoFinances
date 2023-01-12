@@ -1,8 +1,6 @@
-import { Transactions } from "./../../Dashboard/styles";
 import styled from "styled-components/native";
-import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
+import {  RFValue } from "react-native-responsive-fontsize";
 import { Feather } from "@expo/vector-icons";
-import { getStatusBarHeight } from "react-native-iphone-x-helper";
 
 interface TransactionProps {
   type: "positive" | "negative";

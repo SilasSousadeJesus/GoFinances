@@ -1,11 +1,8 @@
 import React from "react";
 import { FlatList } from "react-native";
+import { HighlightCard } from "../../components/HighlightCard";
+import { TransactionCard, TransactionCardProps } from "../../components/TransactionCard";
 
-import { HighlightCard } from "../components/HighlightCard";
-import {
-  TransactionCard,
-  TransactionCardProps,
-} from "../components/TransactionCard";
 import {
   Container,
   Header,
