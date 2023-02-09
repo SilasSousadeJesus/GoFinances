@@ -12,6 +12,7 @@ import { Dashboard } from "./src/screens/Dashboard";
 import { Register } from "./src/screens/Register";
 import { View } from "react-native";
 import theme from "./src/global/styles/theme";
+import { CategorySelect } from "./src/screens/CategorySelect";
 
 export default function App() {
   const [appIsReady, setAppIsReady] = useState(false);
@@ -26,7 +27,7 @@ export default function App() {
           Poppins_700Bold,
         });
       } catch {
-        // handle error
+        
       } finally {
         setAppIsReady(true);
       }
@@ -48,7 +49,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <View onLayout={onLayout} style={{width: '100%', height: '100%'}}>
-        <Register />
+        <CategorySelect />
       </View>
     </ThemeProvider>
   );
